@@ -10,8 +10,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-transparent shadow-sm fixed z-10">
-      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+    <header className="w-full bg-transparent shadow-sm z-10">
+      <div className="container mx-auto px-4 py-2 flex items-center justify-between relative">
         <div className="text-2xl font-bold">
           <a href="#">
             <Image src="/logo.png" alt="Logo" width={60} height={50} />
@@ -56,8 +56,8 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       <nav
         className={cn(
-          "pb-2 invisible opacity-0 h-0 bg-white shadow-md transition-all",
-          isOpen && "visible h-auto opacity-100",
+          "pb-2 invisible opacity-0 h-0 bg-white shadow-md transition-all absolute w-full z-10",
+          isOpen && "visible h-screen opacity-100",
         )}
       >
         <ul className="flex flex-col space-y-4 px-4 py-2">

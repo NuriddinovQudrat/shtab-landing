@@ -1,11 +1,10 @@
 import { ChildProps } from "@/types";
-import { Footer, Navbar } from "./components";
+import { Footer } from "./components";
 
 const HomeLayout = ({ children }: ChildProps) => {
   return (
     <div>
-      <Navbar />
-      <section>{children}</section>
+      <main>{children}</main>
       <Footer />
     </div>
   );
