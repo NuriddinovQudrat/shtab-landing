@@ -22,9 +22,7 @@ export const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-6">
           {links.map((item, index) => (
             <a href={item.href} key={index}>
-              <span className="text-gray-800 hover:text-green-600 transition-all ease-in text-sm">
-                {item.label}
-              </span>
+              <span className="text-white text-sm">{item.label}</span>
             </a>
           ))}
           <a href="#contact">
