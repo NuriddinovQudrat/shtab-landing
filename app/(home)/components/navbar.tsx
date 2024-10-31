@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -10,7 +10,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-transparent shadow-sm z-10">
+    <header className={cn("w-full bg-transparent z-10 backdrop-blur-2xl", isOpen && "bg-white")}>
       <div className="container mx-auto px-4 py-2 flex items-center justify-between relative">
         <div className="text-2xl font-bold">
           <a href="#">
@@ -27,7 +27,7 @@ export const Navbar = () => {
           ))}
           <a href="#contact">
             <Button variant={"outline"} className="text-sm">
-              CONTACT US
+              CONTACT US <ArrowRight />
             </Button>
           </a>
         </nav>
