@@ -70,7 +70,7 @@ export const Navbar = () => {
           ))}
           <li>
             <a href="#contact">
-              <Button variant={"outline"} className="w-full">
+              <Button variant={"secondary"} className="w-full">
                 CONTACT US
               </Button>
             </a>
