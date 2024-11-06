@@ -1,3 +1,8 @@
+"use client";
+
+import { CertificateCard } from "@/components/shared/certificate-card";
+import Marquee from "react-fast-marquee";
+
 export const Certifications = () => {
   return (
     <div className="p-4 py-10">
@@ -14,6 +19,18 @@ export const Certifications = () => {
           </div>
         </div>
       </div>
+      <Marquee pauseOnHover={true} speed={150} className="mt-5">
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+        <CertificateCard />
+      </Marquee>
     </div>
   );
 };
