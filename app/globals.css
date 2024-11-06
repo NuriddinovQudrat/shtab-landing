@@ -72,3 +72,12 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.blur-lg {
+  filter: blur(20px);
+  transition: filter 1s ease;
+}
+
+.blur-0 {
+  filter: blur(0);
+}

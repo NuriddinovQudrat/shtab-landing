@@ -3,8 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/legacy/image";
+import { useState } from "react";
 
 export const Innovation = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <div className="flex md:flex-row-reverse flex-col-reverse">
       <div className="md:w-1/2 w-full flex items-center justify-end">
@@ -33,7 +36,10 @@ export const Innovation = () => {
           objectPosition="center"
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,[YOUR_BASE64_BLUR_DATA]"
-          className="hover:scale-110 transition-all duration-300"
+          className={`hover:scale-110 transition-all duration-300 ${
+            isLoaded ? "blur-0" : "blur-lg"
+          }`}
+          onLoadingComplete={() => setIsLoaded(true)}
         />
       </div>
     </div>
