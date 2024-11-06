@@ -1,4 +1,4 @@
-import { Ecosystem, Hero, Statistics } from "./components";
+import { Certifications, Ecosystem, Hero, Statistics } from "./components";
 
 export default function HomePage() {
   return (
@@ -6,6 +6,7 @@ export default function HomePage() {
       <Hero />
       <Statistics />
       <Ecosystem />
+      <Certifications />
       <div className="container mx-auto"></div>
     </div>
   );
