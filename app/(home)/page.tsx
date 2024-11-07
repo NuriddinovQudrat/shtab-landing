@@ -1,10 +1,12 @@
 import {
   Certifications,
+  Contact,
   Ecosystem,
   Farming,
   Foods,
   Hero,
   Innovation,
+  News,
   Statistics,
 } from "./components";
 
@@ -18,6 +20,8 @@ export default function HomePage() {
       <Foods />
       <Innovation />
       <Farming />
+      <News />
+      <Contact />
       <div className="container mx-auto"></div>
     </div>
   );

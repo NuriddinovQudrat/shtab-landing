@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import RotatingCircles from "./rotating-circles";
 
 export const Ecosystem = () => {
   return (
@@ -24,8 +23,6 @@ export const Ecosystem = () => {
             </Button>
           </div>
         </div>
-
-        <RotatingCircles />
       </div>
     </div>
   );
