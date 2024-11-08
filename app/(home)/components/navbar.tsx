@@ -4,10 +4,14 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Menu, X } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
 
   return (
     <header className={cn("w-full bg-transparent z-10 backdrop-blur-2xl", isOpen && "bg-white")}>
@@ -61,7 +65,7 @@ export const Navbar = () => {
         <ul className="flex flex-col space-y-4 px-4 py-2">
           {links.map((item, index) => (
             <li key={index}>
-              <a href={item.href}>
+              <a href={item.href} onClick={() => setIsOpen(false)}>
                 <span className="text-gray-800 hover:text-green-600 transition-all ease-in text-sm">
                   {item.label}
                 </span>
@@ -69,7 +73,7 @@ export const Navbar = () => {
             </li>
           ))}
           <li>
-            <a href="#contact">
+            <a href="#contact" onClick={() => setIsOpen(false)}>
               <Button variant={"default"} className="w-full">
                 CONTACT US
               </Button>
