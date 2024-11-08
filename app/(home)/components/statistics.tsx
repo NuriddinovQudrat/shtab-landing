@@ -2,7 +2,7 @@ import { StatisticsTab } from "@/components/shared/statistics-tab";
 
 export const Statistics = () => {
   return (
-    <div className="container mx-auto p-4 md:py-20">
+    <div className="container mx-auto p-4 md:py-20" id="statistics">
       <div className="flex">
         <div className="md:w-1/3"></div>
         <div className="md:w-2/3 w-full">

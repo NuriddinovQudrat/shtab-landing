@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Ecosystem = () => {
   return (
-    <div className="bg-primary p-4 py-10">
+    <div className="bg-primary p-4 py-10" id="ecosystem">
       <div className="container mx-auto">
         <div className="flex md:flex-row flex-col mb-10">
           <div className="md:w-1/3 w-full mb-10">

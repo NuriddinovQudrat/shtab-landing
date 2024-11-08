@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 export const Certifications = () => {
   return (
-    <div className="p-4 py-10">
+    <div className="p-4 py-10" id="certifications">
       <div className="container mx-auto">
         <div className="flex md:flex-row flex-col">
           <div className="md:w-1/3 w-full mb-10">

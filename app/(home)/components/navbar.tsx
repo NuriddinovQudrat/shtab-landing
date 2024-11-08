@@ -83,8 +83,12 @@ export const Navbar = () => {
 
 const links = [
   {
-    label: "ABOUT",
-    href: "#about",
+    label: "HOME",
+    href: "#home",
+  },
+  {
+    label: "STATISTICS",
+    href: "#statistics",
   },
   {
     label: "ECOSYSTEM",
@@ -97,9 +101,5 @@ const links = [
   {
     label: "PRODUCTS",
     href: "#products",
-  },
-  {
-    label: "NEWS",
-    href: "#news",
   },
 ];

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Location = () => {
   return (
-    <div className="p-4 py-10">
+    <div className="p-4 py-10" id="location">
       <div className="container mx-auto">
         <div className="flex md:flex-row flex-col md:space-x-5">
           <div className="md:w-1/2 w-full h-auto flex flex-col justify-between">
