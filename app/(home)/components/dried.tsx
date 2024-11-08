@@ -6,7 +6,7 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export const Innovation = () => {
+export const Dried = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -35,7 +35,7 @@ export const Innovation = () => {
       <div className="md:w-1/2 w-full relative 2xl:h-screen xl:h-[70vh] lg:h-[60vh] md:h-[50vh] h-[40vh]">
         <Image
           alt="Image"
-          src={"/innovation.png"}
+          src={"/dried.jpg"}
           loading="lazy"
           layout="fill"
           objectFit="cover"

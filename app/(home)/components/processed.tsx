@@ -3,7 +3,7 @@
 import Image from "next/legacy/image";
 import { useState } from "react";
 
-export const Farming = () => {
+export const Processed = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -32,7 +32,7 @@ export const Farming = () => {
       <div className="md:w-1/2 w-full relative 2xl:h-screen xl:h-[70vh] lg:h-[60vh] md:h-[50vh] h-[40vh]">
         <Image
           alt="Image"
-          src={"/farming.jpg"}
+          src={"/processed.jpg"}
           loading="lazy"
           layout="fill"
           objectFit="cover"

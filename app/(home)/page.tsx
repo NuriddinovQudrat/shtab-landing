@@ -2,10 +2,10 @@ import {
   Brands,
   Contact,
   About,
-  Farming,
-  Foods,
+  Processed,
+  Fresh,
   Hero,
-  Innovation,
+  Dried,
   Location,
   Statistics,
 } from "./components";
@@ -17,9 +17,9 @@ export default function HomePage() {
       <Statistics />
       <About />
       <Brands />
-      <Foods />
-      <Innovation />
-      <Farming />
+      <Fresh />
+      <Dried />
+      <Processed />
       <Contact />
       <hr />
       <Location />
