@@ -6,6 +6,7 @@ import {
   Foods,
   Hero,
   Innovation,
+  Location,
   Statistics,
 } from "./components";
 
@@ -20,6 +21,8 @@ export default function HomePage() {
       <Innovation />
       <Farming />
       <Contact />
+      <hr />
+      <Location />
       <div className="container mx-auto"></div>
     </div>
   );

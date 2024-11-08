@@ -62,8 +62,8 @@ export const Contact = () => {
           </div>
         </div>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex md:flex-row flex-col gap-5">
-            <div className="md:w-1/2 w-full space-y-5">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex md:flex-row flex-col gap-10">
+            <div className="md:w-1/2 w-full space-y-10">
               <FormField
                 control={form.control}
                 name="companyName"
@@ -83,7 +83,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Fullname" {...field} />
+                      <Input placeholder="Fullname *" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -96,7 +96,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Email" {...field} type="email" />
+                      <Input placeholder="Email *" {...field} type="email" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -104,14 +104,14 @@ export const Contact = () => {
               />
             </div>
 
-            <div className="md:w-1/2 w-full space-y-5">
+            <div className="md:w-1/2 w-full space-y-10">
               <FormField
                 control={form.control}
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Phone" type="tel" {...field} />
+                      <Input placeholder="Phone *" type="tel" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -123,7 +123,7 @@ export const Contact = () => {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-muted-foreground">Message</FormLabel>
+                    <FormLabel className="text-muted-foreground">Message *</FormLabel>
                     <FormControl>
                       <Textarea {...field} className="max-h-[70px]" />
                     </FormControl>
