@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 py-2 flex items-center justify-between relative">
         <div className="text-2xl font-bold">
           <a href="#">
-            <Image src="/logo.png" alt="Logo" width={60} height={50} />
+            <Image src="/logo.png" alt="Logo" width={80} height={50} />
           </a>
         </div>
 
@@ -31,7 +31,7 @@ export const Navbar = () => {
           ))}
           <a href="#contact">
             <Button variant={"outline"} className="text-sm">
-              CONTACT US <ArrowRight />
+              BOG&apos;LANISH <ArrowRight />
             </Button>
           </a>
         </nav>
@@ -75,7 +75,7 @@ export const Navbar = () => {
           <li>
             <a href="#contact" onClick={() => setIsOpen(false)}>
               <Button variant={"default"} className="w-full">
-                CONTACT US
+                BOG&apos;LANISH
               </Button>
             </a>
           </li>
@@ -87,23 +87,19 @@ export const Navbar = () => {
 
 const links = [
   {
-    label: "HOME",
+    label: "BOSH SAHIFA",
     href: "#home",
   },
   {
-    label: "STATISTICS",
+    label: "KO'RSATKICHLAR",
     href: "#statistics",
   },
   {
-    label: "ECOSYSTEM",
-    href: "#ecosystem",
+    label: "BIZ HAQIMIZDA",
+    href: "#about",
   },
   {
-    label: "CERTIFICATIONS",
-    href: "#certifications",
-  },
-  {
-    label: "PRODUCTS",
-    href: "#products",
+    label: "BREND KORXONALAR",
+    href: "#brands",
   },
 ];

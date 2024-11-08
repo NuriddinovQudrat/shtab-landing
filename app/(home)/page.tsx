@@ -1,7 +1,7 @@
 import {
   Brands,
   Contact,
-  Ecosystem,
+  About,
   Farming,
   Foods,
   Hero,
@@ -15,7 +15,7 @@ export default function HomePage() {
     <div className="w-full min-h-screen relative">
       <Hero />
       <Statistics />
-      <Ecosystem />
+      <About />
       <Brands />
       <Foods />
       <Innovation />

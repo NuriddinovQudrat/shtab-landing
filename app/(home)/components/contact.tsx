@@ -53,12 +53,14 @@ export const Contact = () => {
           <div className="md:w-1/3 w-full mb-10">
             <h1 className="flex items-center text-secondary-foreground uppercase">
               <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-              Contact Us
+              Bog&apos;lanish
             </h1>
           </div>
           <div className="xl:w-1/3 lg:w-2/3 w-full">
-            <h1 className="sm:text-4xl text-3xl mb-5">Send us a message</h1>
-            <p className="text-sm mb-10">For all enquiries, please fill the form below.</p>
+            <h1 className="sm:text-4xl text-3xl mb-5">Bizga xabar yuboring</h1>
+            <p className="text-sm mb-10">
+              Barcha so&apos;rovlar uchun quyidagi shaklni to&apos;ldiring
+            </p>
           </div>
         </div>
         <Form {...form}>
@@ -70,7 +72,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Company Name" {...field} />
+                      <Input placeholder="Kompaniya nomi" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -83,7 +85,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Fullname *" {...field} />
+                      <Input placeholder="F.I.O *" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -111,7 +113,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Phone *" type="tel" {...field} />
+                      <Input placeholder="Telefon raqam *" type="tel" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -123,7 +125,7 @@ export const Contact = () => {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-muted-foreground">Message *</FormLabel>
+                    <FormLabel className="text-muted-foreground">Xabar *</FormLabel>
                     <FormControl>
                       <Textarea {...field} className="max-h-[70px]" />
                     </FormControl>
@@ -133,7 +135,7 @@ export const Contact = () => {
               />
 
               <Button type="submit" className="">
-                Submit
+                Yuborish
               </Button>
             </div>
           </form>

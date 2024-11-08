@@ -2,7 +2,7 @@ import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 import { Hero } from "./hero";
 import { Statistics } from "./statistics";
-import { Ecosystem } from "./ecosystem";
+import { About } from "./about";
 import { Brands } from "./brands";
 import { Foods } from "./foods";
 import { Innovation } from "./innovation";
@@ -15,7 +15,7 @@ export {
   Footer,
   Hero,
   Statistics,
-  Ecosystem,
+  About,
   Brands,
   Foods,
   Innovation,

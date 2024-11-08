@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Navbar } from "./navbar";
-import Typewriter from "typewriter-effect";
 
 export const Hero = () => {
   return (
@@ -21,15 +20,9 @@ export const Hero = () => {
         <Navbar />
         <section>
           <div className="container mx-auto flex py-60 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-full">
+            <div className="lg:max-w-4xl">
               <h1 className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-[500] text-white lg:text-left text-center">
-                <Typewriter
-                  options={{
-                    autoStart: true,
-                    strings: ["Seeding a flourishing tomorrow"],
-                    loop: true,
-                  }}
-                />
+                O&apos;zbekiston Respublikasi Markaziy Eksport Shtabi
               </h1>
             </div>
           </div>

@@ -9,24 +9,24 @@ export const Location = () => {
             <div>
               <h1 className="flex items-center text-secondary-foreground uppercase md:mb-10 mb-5">
                 <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-                Location
+                Manzil
               </h1>
-              <h2 className="sm:text-4xl text-3xl">Silal location map</h2>
+              <h2 className="sm:text-4xl text-3xl">Bizning manzil</h2>
             </div>
             <div className="flex flex-col gap-5 max-md:mt-5">
               <div>
-                <h6 className="font-semibold">Address:</h6>
+                <h6 className="font-semibold">Adres:</h6>
                 <p>100100, Toshkent shahar, &quot;Bobur&quot; 1-berk ko&apos;chasi, 17-uy</p>
               </div>
               <hr />
               <div>
                 <h6 className="font-semibold">Email:</h6>
-                <a href="mailto:info@karantin.uz">info@karantin.uz</a>
+                <a href="mailto:head3@exportstate.com">head3@exportstate.com</a>
               </div>
               <hr />
               <div>
-                <h6 className="font-semibold">Phone:</h6>
-                <a href="tel:+998712021000">+998 (71) 202 10 00</a>
+                <h6 className="font-semibold">Telefon raqam:</h6>
+                <a href="tel:+998712027778">+998 (71) 202 77 78</a>
               </div>
               <hr />
               <div>

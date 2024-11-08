@@ -11,11 +11,11 @@ export const Brands = () => {
           <div className="md:w-1/3 w-full mb-10">
             <h1 className="flex items-center text-secondary-foreground uppercase">
               <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-              Brands
+              Brend korxonalar
             </h1>
           </div>
-          <div className="xl:w-1/3 lg:w-2/3 w-full">
-            <h1 className="sm:text-4xl text-3xl mb-5">Dedicated to excellence</h1>
+          <div className="lg:w-2/3 w-full">
+            <h1 className="sm:text-4xl text-3xl mb-5">Bizning milliy brend korxonalarimiz</h1>
           </div>
         </div>
       </div>
