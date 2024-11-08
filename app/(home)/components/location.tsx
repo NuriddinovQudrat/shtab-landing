@@ -16,7 +16,7 @@ export const Location = () => {
             <div className="flex flex-col gap-5 max-md:mt-5">
               <div>
                 <h6 className="font-semibold">Address:</h6>
-                <p>100100, Toshkent sh., "Bobur" 1-berk ko'chasi, 17-uy</p>
+                <p>100100, Toshkent shahar, &quot;Bobur&quot; 1-berk ko&apos;chasi, 17-uy</p>
               </div>
               <hr />
               <div>
