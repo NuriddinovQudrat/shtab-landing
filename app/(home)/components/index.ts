@@ -3,7 +3,7 @@ import { Footer } from "./footer";
 import { Hero } from "./hero";
 import { Statistics } from "./statistics";
 import { Ecosystem } from "./ecosystem";
-import { Certifications } from "./certifications";
+import { Brands } from "./brands";
 import { Foods } from "./foods";
 import { Innovation } from "./innovation";
 import { Farming } from "./farming";
@@ -16,7 +16,7 @@ export {
   Hero,
   Statistics,
   Ecosystem,
-  Certifications,
+  Brands,
   Foods,
   Innovation,
   Farming,

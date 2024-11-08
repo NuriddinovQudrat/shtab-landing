@@ -1,5 +1,5 @@
 import {
-  Certifications,
+  Brands,
   Contact,
   Ecosystem,
   Farming,
@@ -16,7 +16,7 @@ export default function HomePage() {
       <Hero />
       <Statistics />
       <Ecosystem />
-      <Certifications />
+      <Brands />
       <Foods />
       <Innovation />
       <Farming />
