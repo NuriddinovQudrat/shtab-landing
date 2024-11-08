@@ -19,8 +19,8 @@ export const Innovation = () => {
           </h1>
           <h1 className="sm:text-4xl text-3xl mb-5">Qurutilgan meva va sabzavotlar</h1>
           <p className="text-sm mb-10">
-            O'zbekiston Respublikasida eksport uchun mo'ljallangan 40 turga yaqin qurutilgan meva va
-            sabzavotlar turi mavjud
+            O&apos;zbekiston Respublikasida eksport uchun mo&apos;ljallangan 40 turga yaqin
+            qurutilgan meva va sabzavotlar turi mavjud
           </p>
           <Link
             href={"https://agrokomakchi.uz/mahsulotlar/1/?title=Quritilgan%20mahsulotlar"}
