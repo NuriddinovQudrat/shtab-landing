@@ -20,9 +20,9 @@ export const Hero = () => {
         <Navbar />
         <section>
           <div className="container mx-auto flex py-60 md:flex-row flex-col items-center">
-            <div className="lg:max-w-4xl">
+            <div className="lg:max-w-5xl">
               <h1 className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-[500] text-white lg:text-left text-center">
-                O&apos;zbekiston Respublikasi Markaziy Eksport Shtabi
+                O‘simliklar karantini va himoyasi agentligi Markaziy eksport shtabi
               </h1>
             </div>
           </div>
