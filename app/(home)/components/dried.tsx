@@ -15,12 +15,12 @@ export const Dried = () => {
         <div className="lg:w-1/2 w-full p-4 lg:pl-20 mr-auto">
           <h1 className="flex items-center text-secondary-foreground uppercase mb-5">
             <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-            Qurutilgan
+            Quritilgan
           </h1>
-          <h1 className="sm:text-4xl text-3xl mb-5">Qurutilgan meva va sabzavotlar</h1>
+          <h1 className="sm:text-4xl text-3xl mb-5">Quritilgan meva va sabzavotlar</h1>
           <p className="text-sm mb-10">
             O&apos;zbekiston Respublikasida eksport uchun mo&apos;ljallangan 40 turga yaqin
-            qurutilgan meva va sabzavotlar turi mavjud
+            quritilgan meva va sabzavotlar turi mavjud
           </p>
           <Link
             href={"https://agrokomakchi.uz/mahsulotlar/1/?title=Quritilgan%20mahsulotlar"}
