@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const montserrat = localFont({
   src: "./fonts/MontserratVF.ttf",
@@ -23,7 +24,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" type="image/png" sizes="16x16" />
       </head>
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>
+        <Toaster />
+        {children}
+      </body>
     </html>
   );
 }

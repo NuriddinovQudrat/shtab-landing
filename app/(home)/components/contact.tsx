@@ -15,6 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   companyName: z.string(),
@@ -43,7 +44,19 @@ export const Contact = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    // https://api.telegram.org/bot{bot}/getUpdates
+    const token = "7559766084:AAHq-qObPmdmXxZ6l45xn37AW5HqYrhmbQU";
+    const chatID = "-4581798282";
+
+    const message = `<b>🆕 Yangi xabar</b>%0A%0A<b>🏠 Kompaniya: </b><i>${values.companyName ? values.companyName : "-"}</i>%0A<b>👤 F.I.Sh: </b><i>${values.fullname}</i>%0A<b>🗂 Email: </b><i>${values.email}</i>%0A<b>📞 Telefon: </b><i>${values.phone}</i>%0A<b>📬 Xabar: </b><i>${values.message}</i>`;
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatID}&text=${message}&parse_mode=html`;
+
+    const apibot = new XMLHttpRequest();
+    apibot.open("GET", url, true);
+    apibot.send();
+    toast("Xabaringiz yuborildi!");
+
+    form.reset();
   }
 
   return (
