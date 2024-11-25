@@ -9,7 +9,7 @@ export const Assistence = () => {
           <div className="md:w-1/3 w-full mb-10">
             <h1 className="flex items-center text-primary-foreground uppercase">
               <div className="bg-primary-foreground w-5 h-[1px] mr-2"></div>
-              Yordam
+              Eksportda ko&apos;mak
             </h1>
           </div>
           <div className="md:w-2/3 w-full mb-5">

@@ -8,9 +8,9 @@ export const Statistics = () => {
         <div className="md:w-2/3 w-full">
           <p className="md:text-3xl text-2xl font-[500] py-5">
             O&apos;simliklar karantini va himoyasi agentligi binosida &quot;Markaziy eksport
-            shtabi&quot; tashkil etilib, 21 nafar mutaxassis biriktirildi hamda 14 ta hududlarda ham
+            shtabi&quot; tashkil etilib, 22 nafar mutaxassis biriktirildi hamda 14 ta hududlarda ham
             &quot;Eksport shtab&quot;lari tashkil etildi. &quot;Markaziy eksport shtabi&quot;
-            a&apos;zolari 39 ta xorijiy davlatlar elchixonalariga va hududiy shtablarga
+            a&apos;zolari 52 ta xorijiy davlatlar elchixonalariga va hududiy shtablarga
             biriktirildi.
           </p>
         </div>
