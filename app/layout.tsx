@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { I18Provider } from "@/components/providers/i18-next-provider";
 
 const montserrat = localFont({
   src: "./fonts/MontserratVF.ttf",
@@ -26,7 +27,7 @@ export default function RootLayout({
       </head>
       <body className={`${montserrat.className} antialiased`}>
         <Toaster />
-        {children}
+        <I18Provider>{children}</I18Provider>
       </body>
     </html>
   );
