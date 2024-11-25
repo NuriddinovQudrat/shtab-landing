@@ -8,6 +8,7 @@ import {
   Dried,
   Location,
   Statistics,
+  Assistence,
 } from "./components";
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Fresh />
       <Dried />
       <Processed />
+      <Assistence />
       <Contact />
       <hr />
       <Location />

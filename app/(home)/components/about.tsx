@@ -15,18 +15,22 @@ export const About = () => {
   return (
     <div className="bg-primary p-4 py-10" id="about">
       <div className="container mx-auto">
-        <div className="mb-10">
-          <h1 className="flex items-center text-primary-foreground uppercase">
-            <div className="bg-primary-foreground w-5 h-[1px] mr-2"></div>
-            Biz haqimizda
-          </h1>
+        <div className="flex md:flex-row flex-col">
+          <div className="md:w-1/3 w-full mb-10">
+            <h1 className="flex items-center text-primary-foreground uppercase">
+              <div className="bg-primary-foreground w-5 h-[1px] mr-2"></div>
+              Biz haqimizda
+            </h1>
+          </div>
+          <div className="md:w-2/3 w-full mb-5">
+            <h1 className="sm:text-4xl text-3xl mb-5 text-white">
+              Markaziy eksport shtabining asosiy vazifalari:
+            </h1>
+          </div>
         </div>
 
         <div className="flex items-center justify-between lg:flex-row flex-col-reverse gap-10">
           <div className="lg:w-1/3 w-full text-white">
-            <h1 className="sm:text-4xl text-3xl mb-5">
-              Markaziy eksport shtabining asosiy vazifalari:
-            </h1>
             <div className="flex flex-wrap">
               <div className="flex flex-wrap w-full">
                 <div className="md:py-6">

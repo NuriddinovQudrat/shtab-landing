@@ -9,6 +9,7 @@ import { Dried } from "./dried";
 import { Processed } from "./processed";
 import { Contact } from "./contact";
 import { Location } from "./location";
+import { Assistence } from "./assistence";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Processed,
   Contact,
   Location,
+  Assistence,
 };

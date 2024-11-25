@@ -102,4 +102,8 @@ const links = [
     label: "BREND KORXONALAR",
     href: "#brands",
   },
+  {
+    label: "YORDAM",
+    href: "#assistence",
+  },
 ];
