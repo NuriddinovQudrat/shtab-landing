@@ -2,8 +2,11 @@
 
 import { BrandCard } from "@/components/shared/brand-card";
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 
 export const Brands = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="p-4 py-10" id="brands">
       <div className="container mx-auto">
@@ -11,11 +14,11 @@ export const Brands = () => {
           <div className="md:w-1/3 w-full mb-10">
             <h1 className="flex items-center text-secondary-foreground uppercase">
               <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-              Brend korxonalar
+              {t("brands")}
             </h1>
           </div>
           <div className="lg:w-2/3 w-full">
-            <h1 className="sm:text-4xl text-3xl mb-5">Bizning milliy brend korxonalarimiz</h1>
+            <h1 className="sm:text-4xl text-3xl mb-5">{t("national-companies")}</h1>
           </div>
         </div>
       </div>

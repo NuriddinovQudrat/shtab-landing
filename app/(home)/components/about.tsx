@@ -10,8 +10,11 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/legacy/image";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-primary p-4 py-10" id="about">
       <div className="container mx-auto">
@@ -19,13 +22,11 @@ export const About = () => {
           <div className="md:w-1/3 w-full mb-10">
             <h1 className="flex items-center text-primary-foreground uppercase">
               <div className="bg-primary-foreground w-5 h-[1px] mr-2"></div>
-              Biz haqimizda
+              {t("about")}
             </h1>
           </div>
           <div className="md:w-2/3 w-full mb-5">
-            <h1 className="sm:text-4xl text-3xl mb-5 text-white">
-              Markaziy eksport shtabining asosiy vazifalari:
-            </h1>
+            <h1 className="sm:text-4xl text-3xl mb-5 text-white">{t("main-tasks")}</h1>
           </div>
         </div>
 
@@ -52,12 +53,10 @@ export const About = () => {
                       </svg>
                     </div>
                     <div className="flex-grow pl-4">
-                      <h2 className="font-bold title-font text-sm mb-1 tracking-wider">VAZIFA 1</h2>
-                      <p className="leading-relaxed">
-                        Meva – sabzavot va oziq-ovqat mahsulotlarining xorijdagi narxlari
-                        to&apos;g&apos;risida ma&apos;lumotlarni umumlashtirish va hududiy shtablar
-                        orqali eksportchi korxonalarga yetkazish
-                      </p>
+                      <h2 className="font-bold title-font text-sm mb-1 tracking-wider">
+                        {t("task")} 1
+                      </h2>
+                      <p className="leading-relaxed">{t("task1")}</p>
                     </div>
                   </div>
                   <div className="flex relative pb-12">
@@ -78,10 +77,10 @@ export const About = () => {
                       </svg>
                     </div>
                     <div className="flex-grow pl-4">
-                      <h2 className="font-bold title-font text-sm mb-1 tracking-wider">VAZIFA 2</h2>
-                      <p className="leading-relaxed">
-                        Xorijiy import qiluvchi korxonalar ro&apos;yxatlarini shakllantirish
-                      </p>
+                      <h2 className="font-bold title-font text-sm mb-1 tracking-wider">
+                        {t("task")} 2
+                      </h2>
+                      <p className="leading-relaxed">{t("task2")}</p>
                     </div>
                   </div>
                   <div className="flex relative">
@@ -100,13 +99,10 @@ export const About = () => {
                       </svg>
                     </div>
                     <div className="flex-grow pl-4">
-                      <h2 className="font-bold title-font text-sm mb-1 tracking-wider">VAZIFA 3</h2>
-                      <p className="leading-relaxed">
-                        Xorijiy davlatlardagi yirik ulgurji markazlari to&apos;g&apos;risidagi
-                        ma&apos;lumotlarni olish va ulardagi qishloq xo&apos;jaligi mahsulotlari
-                        savdosi bilan shug&apos;ullanuvchi savdo agentlarining ro&apos;yxatini
-                        shakllantirish
-                      </p>
+                      <h2 className="font-bold title-font text-sm mb-1 tracking-wider">
+                        {t("task")} 3
+                      </h2>
+                      <p className="leading-relaxed">{t("task3")}</p>
                     </div>
                   </div>
                 </div>

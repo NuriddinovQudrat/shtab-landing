@@ -16,22 +16,25 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { toast } from "sonner";
-
-const formSchema = z.object({
-  companyName: z.string(),
-  fullname: z.string().nonempty("Fullname is required!"),
-  email: z
-    .string()
-    .email({ message: "Please enter a valid email!" })
-    .nonempty("Email is required!"),
-  phone: z
-    .string()
-    .regex(/^[0-9]{9,13}$/, { message: "Enter a valid phone number!" })
-    .nonempty("Phone is required!"),
-  message: z.string().nonempty("Message is required!"),
-});
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
+  const formSchema = z.object({
+    companyName: z.string(),
+    fullname: z.string().nonempty(t("required")),
+    email: z
+      .string()
+      .email({ message: t("valid-email") })
+      .nonempty(t("required")),
+    phone: z
+      .string()
+      .regex(/^[0-9]{9,13}$/, { message: t("valid-phone") })
+      .nonempty(t("required")),
+    message: z.string().nonempty(t("required")),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -54,7 +57,7 @@ export const Contact = () => {
     const apibot = new XMLHttpRequest();
     apibot.open("GET", url, true);
     apibot.send();
-    toast("Xabaringiz yuborildi!");
+    toast(t("sent-succesfully"));
 
     form.reset();
   }
@@ -66,14 +69,12 @@ export const Contact = () => {
           <div className="md:w-1/3 w-full mb-10">
             <h1 className="flex items-center text-secondary-foreground uppercase">
               <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-              Bog&apos;lanish
+              {t("contact")}
             </h1>
           </div>
           <div className="xl:w-1/3 lg:w-2/3 w-full">
-            <h1 className="sm:text-4xl text-3xl mb-5">Bizga xabar yuboring</h1>
-            <p className="text-sm mb-10">
-              Barcha so&apos;rovlar uchun quyidagi shaklni to&apos;ldiring
-            </p>
+            <h1 className="sm:text-4xl text-3xl mb-5">{t("send-message-us")}</h1>
+            <p className="text-sm mb-10">{t("send-message-us-text")}</p>
           </div>
         </div>
         <Form {...form}>
@@ -85,7 +86,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Kompaniya nomi" {...field} />
+                      <Input placeholder={t("company-name")} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -98,7 +99,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="F.I.O *" {...field} />
+                      <Input placeholder={`${t("fullname")} *`} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -111,7 +112,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Email *" {...field} type="email" />
+                      <Input placeholder={`${t("email")} *`} {...field} type="email" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -126,7 +127,7 @@ export const Contact = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Telefon raqam *" type="tel" {...field} />
+                      <Input placeholder={`${t("phone")} *`} type="tel" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -138,7 +139,7 @@ export const Contact = () => {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-muted-foreground">Xabar *</FormLabel>
+                    <FormLabel className="text-muted-foreground">{`${t("text")} *`}</FormLabel>
                     <FormControl>
                       <Textarea {...field} className="max-h-[70px]" />
                     </FormControl>
@@ -148,7 +149,7 @@ export const Contact = () => {
               />
 
               <Button type="submit" className="">
-                Yuborish
+                {t("send")}
               </Button>
             </div>
           </form>

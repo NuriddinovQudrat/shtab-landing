@@ -5,8 +5,10 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Fresh = () => {
+  const { t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -15,13 +17,10 @@ export const Fresh = () => {
         <div className="lg:w-1/2 w-full p-4 lg:pr-20">
           <h1 className="flex items-center text-secondary-foreground uppercase mb-5">
             <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-            Yangi uzilgan
+            {t("fresh")}
           </h1>
-          <h1 className="sm:text-4xl text-3xl mb-5">Yangi uzilgan meva va sabzavotlar</h1>
-          <p className="text-sm mb-10">
-            O&apos;zbekiston Respublikasida eksport uchun mo&apos;ljallangan 90 turga yaqin yangi
-            uzilgan meva va sabzavotlar turi mavjud
-          </p>
+          <h1 className="sm:text-4xl text-3xl mb-5">{t("fresh-text")}</h1>
+          <p className="text-sm mb-10">{t("fresh-long-text")}</p>
           <Link
             href={
               "https://agrokomakchi.uz/mahsulotlar/2/?title=Yangi%20uzilgan%20sabzavot%20va%20mevalar"
@@ -29,7 +28,7 @@ export const Fresh = () => {
             target="_blank"
           >
             <Button variant={"default"}>
-              Batafsil <ArrowRight />
+              {t("more")} <ArrowRight />
             </Button>
           </Link>
         </div>

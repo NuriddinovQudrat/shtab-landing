@@ -5,8 +5,10 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Dried = () => {
+  const { t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -15,19 +17,16 @@ export const Dried = () => {
         <div className="lg:w-1/2 w-full p-4 lg:pl-20 mr-auto">
           <h1 className="flex items-center text-secondary-foreground uppercase mb-5">
             <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-            Quritilgan
+            {t("dried")}
           </h1>
-          <h1 className="sm:text-4xl text-3xl mb-5">Quritilgan meva va sabzavotlar</h1>
-          <p className="text-sm mb-10">
-            O&apos;zbekiston Respublikasida eksport uchun mo&apos;ljallangan 40 turga yaqin
-            quritilgan meva va sabzavotlar turi mavjud
-          </p>
+          <h1 className="sm:text-4xl text-3xl mb-5">{t("dried-text")}</h1>
+          <p className="text-sm mb-10">{t("dried-long-text")}</p>
           <Link
             href={"https://agrokomakchi.uz/mahsulotlar/1/?title=Quritilgan%20mahsulotlar"}
             target="_blank"
           >
             <Button variant={"default"}>
-              Batafsil <ArrowRight />
+              {t("more")} <ArrowRight />
             </Button>
           </Link>
         </div>

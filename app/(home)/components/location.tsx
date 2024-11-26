@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Location = () => {
+  const { t } = useTranslation();
+
   const [isLoaded, setIsLoaded] = useState(false);
   const [inView, setInView] = useState(false);
 
@@ -17,29 +20,29 @@ export const Location = () => {
             <div>
               <h1 className="flex items-center text-secondary-foreground uppercase md:mb-10 mb-5">
                 <div className="bg-secondary-foreground w-5 h-[1px] mr-2"></div>
-                Manzil
+                {t("address")}
               </h1>
-              <h2 className="sm:text-4xl text-3xl">Bizning manzil</h2>
+              <h2 className="sm:text-4xl text-3xl">{t("our-address")}</h2>
             </div>
             <div className="flex flex-col gap-5 max-md:mt-5">
               <div>
-                <h6 className="font-semibold">Adres:</h6>
-                <p>100100, Toshkent shahar, &quot;Bobur&quot; 1-berk ko&apos;chasi, 17-uy</p>
+                <h6 className="font-semibold">{t("address")}:</h6>
+                <p>{t("full-address")}</p>
               </div>
               <hr />
               <div>
-                <h6 className="font-semibold">Email:</h6>
+                <h6 className="font-semibold">{t("email")}:</h6>
                 <a href="mailto:head3@exportstate.com">head3@exportstate.com</a>
               </div>
               <hr />
               <div>
-                <h6 className="font-semibold">Telefon raqam:</h6>
+                <h6 className="font-semibold">{t("phone")}:</h6>
                 <a href="tel:+998712027778">+998 (71) 202 77 78</a>
               </div>
               <hr />
               <div>
-                <h6 className="font-semibold">Ish kunlari:</h6>
-                <p>Dushanba - Juma 9:00-18:00</p>
+                <h6 className="font-semibold">{t("working-days")}:</h6>
+                <p>{t("m-f")} 9:00-18:00</p>
               </div>
             </div>
           </div>
@@ -55,7 +58,7 @@ export const Location = () => {
                   inView ? "flex" : "hidden"
                 }`}
               >
-                <Button variant={"outline"}>Tashrif buyurish</Button>
+                <Button variant={"outline"}>{t("visit")}</Button>
               </div>
             </Link>
             <Image
