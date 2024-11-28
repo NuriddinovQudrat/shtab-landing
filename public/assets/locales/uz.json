@@ -55,5 +55,7 @@
   "our-address": "Bizning manzil",
   "working-days": "Ish kunlari",
   "m-f": "Dushanba - Juma",
-  "visit": "Tashrif buyurish"
+  "visit": "Tashrif buyurish",
+  "not-found": "Sahifa topilmadi",
+  "return-home": "Bosh sahifaga qaytish"
 }
