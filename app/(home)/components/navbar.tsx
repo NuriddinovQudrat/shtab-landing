@@ -160,6 +160,25 @@ export const Navbar = () => {
               </Button>
             </a>
           </li>
+          <li>
+            <div className="w-20 ml-auto">
+              <Select value={selectedLang} onValueChange={e => changeLanguage(e)}>
+                <SelectTrigger className="w-20 px-2 text-black font-bold">
+                  <SelectValue placeholder={selectedLang.toLocaleUpperCase()} />
+                </SelectTrigger>
+                <SelectContent className="w-20">
+                  <SelectGroup>
+                    <SelectItem value="uz" className="w-24">
+                      🇺🇿 UZ
+                    </SelectItem>
+                    <SelectItem value="en" className="w-24">
+                      🇬🇧 EN
+                    </SelectItem>
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
