@@ -12,10 +12,10 @@ import {
 import { useScrolled } from "@/hooks/use-scrolled";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Menu, X } from "lucide-react";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Cookies from "js-cookie";
+import Image from "next/legacy/image";
 
 export const Navbar = () => {
   const { i18n, t } = useTranslation();
@@ -66,7 +66,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 py-2 flex items-center justify-between relative">
         <div className="text-2xl font-bold">
           <a href="#">
-            <Image src="/logo.png" alt="Logo" width={60} height={40} />
+            <Image src="/logo.png" alt="Logo" width={60} height={60} />
           </a>
         </div>
         {/* Desktop Menu */}
@@ -86,16 +86,22 @@ export const Navbar = () => {
           </a>
           <div>
             <Select value={selectedLang} onValueChange={e => changeLanguage(e)}>
-              <SelectTrigger className="w-20 px-2 text-white font-bold">
+              <SelectTrigger className="w-28 px-2 text-white font-bold">
                 <SelectValue placeholder={selectedLang.toLocaleUpperCase()} />
               </SelectTrigger>
-              <SelectContent className="w-20">
+              <SelectContent className="w-24">
                 <SelectGroup>
-                  <SelectItem value="uz" className="w-24">
-                    🇺🇿 UZ
+                  <SelectItem value="uz">
+                    <div className="w-20 flex items-center">
+                      <Image src={"/flags/uz.png"} alt="Uzb" width={24} height={24} />
+                      <span className="ml-2">UZ</span>
+                    </div>
                   </SelectItem>
-                  <SelectItem value="en" className="w-24">
-                    🇬🇧 EN
+                  <SelectItem value="en">
+                    <div className="w-20 flex items-center">
+                      <Image src={"/flags/gb.png"} alt="Uzb" width={24} height={24} />
+                      <span className="ml-2">EN</span>
+                    </div>
                   </SelectItem>
                 </SelectGroup>
               </SelectContent>
@@ -160,19 +166,25 @@ export const Navbar = () => {
               </Button>
             </a>
           </li>
-          <li>
+          <li className="pr-5">
             <div className="w-20 ml-auto">
               <Select value={selectedLang} onValueChange={e => changeLanguage(e)}>
-                <SelectTrigger className="w-20 px-2 text-black font-bold">
+                <SelectTrigger className="w-28 px-2 text-black font-bold">
                   <SelectValue placeholder={selectedLang.toLocaleUpperCase()} />
                 </SelectTrigger>
-                <SelectContent className="w-20">
+                <SelectContent className="w-24">
                   <SelectGroup>
-                    <SelectItem value="uz" className="w-24">
-                      🇺🇿 UZ
+                    <SelectItem value="uz">
+                      <div className="w-20 flex items-center">
+                        <Image src={"/flags/uz.png"} alt="Uzb" width={24} height={24} />
+                        <span className="ml-2">UZ</span>
+                      </div>
                     </SelectItem>
-                    <SelectItem value="en" className="w-24">
-                      🇬🇧 EN
+                    <SelectItem value="en">
+                      <div className="w-20 flex items-center">
+                        <Image src={"/flags/gb.png"} alt="Uzb" width={24} height={24} />
+                        <span className="ml-2">EN</span>
+                      </div>
                     </SelectItem>
                   </SelectGroup>
                 </SelectContent>
