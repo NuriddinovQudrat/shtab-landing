@@ -5,9 +5,11 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Cookies from "js-cookie";
 
 export const Location = () => {
   const { t } = useTranslation();
+  const initialLang = Cookies.get("i18next");
 
   const [isLoaded, setIsLoaded] = useState(false);
   const [inView, setInView] = useState(false);
@@ -62,7 +64,7 @@ export const Location = () => {
               </div>
             </Link>
             <Image
-              src={"/agrokumakchi.jpg"}
+              src={initialLang === "uz" ? "/agrokomakchi.jpg" : "/agrokomakchi-en.jpg"}
               alt="Agrokumakchi"
               loading="lazy"
               layout="fill"
