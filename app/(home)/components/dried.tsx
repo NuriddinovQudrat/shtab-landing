@@ -34,11 +34,11 @@ export const Dried = () => {
       <div className="md:w-1/2 w-full relative 2xl:h-screen xl:h-[70vh] lg:h-[60vh] md:h-[50vh] h-[40vh]">
         <Image
           alt="Image"
-          src={"/dried.JPG"}
+          src={"/dried2.webp"}
           loading="lazy"
           layout="fill"
           objectFit="cover"
-          objectPosition="center"
+          objectPosition="right"
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,[YOUR_BASE64_BLUR_DATA]"
           className={`hover:scale-110 transition-all duration-300 ${

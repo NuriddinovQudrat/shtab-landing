@@ -7,7 +7,7 @@ export const Agrokomakchi = () => {
   return (
     <div className="w-full h-[40vh] relative">
       <div
-        className="bg-[url('/agrokomakchi/bg-agrokomakchi1.jpeg')] w-full h-full absolute top-0 left-0 right-0 bottom-0 z-0"
+        className="bg-[url('/agrokomakchi/bg-agrokomakchi.jpeg')] w-full h-full absolute top-0 left-0 right-0 bottom-0 z-0"
         style={{
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
