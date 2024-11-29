@@ -9,6 +9,7 @@ import {
   Location,
   Statistics,
   Assistence,
+  Agrokomakchi,
 } from "./components";
 
 export default function HomePage() {
@@ -25,7 +26,7 @@ export default function HomePage() {
       <Contact />
       <hr />
       <Location />
-      <div className="container mx-auto"></div>
+      <Agrokomakchi />
     </div>
   );
 }

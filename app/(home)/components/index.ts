@@ -10,6 +10,7 @@ import { Processed } from "./processed";
 import { Contact } from "./contact";
 import { Location } from "./location";
 import { Assistence } from "./assistence";
+import { Agrokomakchi } from "./agrokomakchi";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Contact,
   Location,
   Assistence,
+  Agrokomakchi,
 };

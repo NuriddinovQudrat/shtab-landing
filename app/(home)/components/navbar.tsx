@@ -66,21 +66,21 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 py-2 flex items-center justify-between relative">
         <div className="text-2xl font-bold">
           <a href="#">
-            <Image src="/logo.png" alt="Logo" width={60} height={60} />
+            <Image src="/logo.png" alt="Logo" width={70} height={80} />
           </a>
         </div>
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-6">
           {links.map((item, index) => (
             <a href={item.href} key={index}>
-              <span className="text-white uppercase text-sm">{item.label}</span>
+              <span className="text-white uppercase text-md font-normal">{item.label}</span>
             </a>
           ))}
           <a href={"https://t.me/exportstate_bot"} target="_blank">
-            <span className="text-white text-sm">TELEGRAM BOT</span>
+            <span className="text-white text-md">TELEGRAM BOT</span>
           </a>
           <a href="#contact">
-            <Button variant={"outline"} className="text-sm uppercase">
+            <Button variant={"outline"} className="text-md uppercase">
               {t("contact")} <ArrowRight />
             </Button>
           </a>
@@ -142,7 +142,7 @@ export const Navbar = () => {
           {links.map((item, index) => (
             <li key={index}>
               <a href={item.href} onClick={() => setIsOpen(false)}>
-                <span className="text-gray-800 uppercase hover:text-green-600 transition-all ease-in text-sm">
+                <span className="text-gray-800 uppercase hover:text-green-600 transition-all ease-in text-md">
                   {item.label}
                 </span>
               </a>
@@ -154,14 +154,14 @@ export const Navbar = () => {
               target="_blank"
               onClick={() => setIsOpen(false)}
             >
-              <span className="text-gray-800 hover:text-green-600 transition-all ease-in text-sm">
+              <span className="text-gray-800 hover:text-green-600 transition-all ease-in text-md">
                 TELEGRAM BOT
               </span>
             </a>
           </li>
           <li>
             <a href="#contact" onClick={() => setIsOpen(false)}>
-              <Button variant={"default"} className="w-full uppercase">
+              <Button variant={"default"} className="w-full uppercase text-md">
                 {t("contact")}
               </Button>
             </a>
