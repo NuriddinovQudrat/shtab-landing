@@ -10,6 +10,7 @@ import {
   Statistics,
   Assistence,
   Agrokomakchi,
+  Employees,
 } from "./components";
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Hero />
       <Statistics />
       <About />
+      <Employees />
       <Brands />
       <Fresh />
       <Dried />

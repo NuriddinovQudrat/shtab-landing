@@ -11,6 +11,7 @@ import { Contact } from "./contact";
 import { Location } from "./location";
 import { Assistence } from "./assistence";
 import { Agrokomakchi } from "./agrokomakchi";
+import { Employees } from "./employees";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   Location,
   Assistence,
   Agrokomakchi,
+  Employees,
 };

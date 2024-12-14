@@ -21,7 +21,7 @@ export const Hero = () => {
       <div className="bg-black/50 w-full h-screen z-10 absolute top-0 left-auto right-auto">
         <Navbar />
         <section>
-          <div className="container mx-auto flex py-60 md:pt-96 md:flex-row flex-col items-center">
+          <div className="container mx-auto flex py-60 md:pt-80 md:flex-row flex-col items-center">
             <div className="lg:max-w-5xl">
               <h1 className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-[500] text-white lg:text-left text-center">
                 {t("hero-text")}

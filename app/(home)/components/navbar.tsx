@@ -73,14 +73,14 @@ export const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-6">
           {links.map((item, index) => (
             <a href={item.href} key={index}>
-              <span className="text-white uppercase text-md font-normal">{item.label}</span>
+              <span className="text-white uppercase text-xs font-normal">{item.label}</span>
             </a>
           ))}
           <a href={"https://t.me/exportstate_bot"} target="_blank">
-            <span className="text-white text-md">TELEGRAM BOT</span>
+            <span className="text-white text-xs">TELEGRAM BOT</span>
           </a>
           <a href="#contact">
-            <Button variant={"outline"} className="text-md uppercase">
+            <Button variant={"outline"} className="text-xs uppercase">
               {t("contact")} <ArrowRight />
             </Button>
           </a>
