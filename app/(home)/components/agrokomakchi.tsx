@@ -4,7 +4,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import Image from "next/legacy/image";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 
 export const Agrokomakchi = () => {
@@ -65,6 +65,9 @@ export const Agrokomakchi = () => {
         <div className="flex gap-5 items-center">
           <a href="https://t.me/exportstate" target="_blank">
             <FaTelegram color="white" size={24} />
+          </a>
+          <a href="https://www.instagram.com/exportstate_com?igsh=eHFqbGFsZngyNHds" target="_blank">
+            <FaInstagram color="white" size={24} />
           </a>
           <a
             href="https://www.linkedin.com/company/agency-of-plant-protection-and-quarantine-of-the-republic-of-uzbekistan/"

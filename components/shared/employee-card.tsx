@@ -6,7 +6,14 @@ import { CarouselItem } from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
 import { cn } from "@/lib/utils";
 
-const EmployeeCard = () => {
+interface EmployeeCardProps {
+  employee: {
+    imgUrl: string;
+    name: string;
+  };
+}
+
+const EmployeeCard = ({ employee }: EmployeeCardProps) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -20,8 +27,8 @@ const EmployeeCard = () => {
           <CardContent className="flex p-0 rounded-md md:h-[500px] h-[400px] items-center justify-center">
             <div className="w-full h-full rounded-md relative overflow-hidden">
               <Image
-                src={"/employees/1.jpg"}
-                alt="User"
+                src={employee.imgUrl}
+                alt={employee.name}
                 layout="fill"
                 objectPosition={"center"}
                 className={cn("object-cover transition-all duration-200", isHover && "scale-110")}
@@ -35,7 +42,7 @@ const EmployeeCard = () => {
                   background: "linear-gradient(0deg, #459e5f 0, rgba(0, 0, 0, 0) 100%)",
                 }}
               >
-                <h1 className="text-white text-2xl font-semibold">Yorkin Malikov</h1>
+                <h1 className="text-white text-2xl font-semibold">{employee.name}</h1>
               </div>
             </div>
           </CardContent>

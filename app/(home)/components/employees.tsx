@@ -32,14 +32,14 @@ export const Employees = () => {
           className="w-full"
           plugins={[
             Autoplay({
-              delay: 5000,
+              delay: 10000,
             }),
           ]}
         >
           <CarouselContent className="-ml-1">
-            {Array.from({ length: 5 }).map((_, index) => {
-              return <EmployeeCard key={index} />;
-            })}
+            {employees.map((employee, index) => (
+              <EmployeeCard key={index} employee={employee} />
+            ))}
           </CarouselContent>
           <CarouselPrevious className="text-primary" />
           <CarouselNext className="text-primary" />
@@ -48,3 +48,22 @@ export const Employees = () => {
     </div>
   );
 };
+
+const employees = [
+  {
+    imgUrl: "/employees/1.JPG",
+    name: "Yorkin Malikov",
+  },
+  {
+    imgUrl: "/employees/2.JPG",
+    name: "Yorkin Malikov",
+  },
+  {
+    imgUrl: "/employees/3.JPG",
+    name: "Yorkin Malikov",
+  },
+  {
+    imgUrl: "/employees/4.JPG",
+    name: "Yorkin Malikov",
+  },
+];
