@@ -24,7 +24,7 @@ export const Employees = () => {
             </h1>
           </div>
           <div className="xl:w-1/3 lg:w-2/3 w-full">
-            <h1 className="sm:text-4xl text-3xl mb-5">{t("export-employees")}</h1>
+            <h1 className="text-3xl mb-5">{t("export-employees")}</h1>
           </div>
         </div>
 
