@@ -93,7 +93,7 @@ const employees = [
     imgUrl: "/employees/8.jpg",
     name: "Karimov Ibrohim",
     position: "Toshkent viloyatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1588"],
+    tel: ["+99871 202 77 78", "1516"],
     email: "manager07@exportstate.com",
   },
   {
@@ -178,13 +178,13 @@ const employees = [
     name: "Murodjonova Nargiza",
     position: "Yaponiya davlatiga mas'ul xodim",
     tel: ["+99871 202 77 78", "1583"],
-    email: "manager07@exportstate.com",
+    email: "manager09@exportstate.com",
   },
   {
     imgUrl: "/employees/21.jpg",
     name: "Ilhomova Farangiz",
     position: "Hindiston va Pokiston davlatlariga mas'ul xodim",
     tel: ["+99871 202 77 78", "1590"],
-    email: "manager07@exportstate.com",
+    email: "manager17@exportstate.com",
   },
 ];
