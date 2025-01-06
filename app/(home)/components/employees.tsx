@@ -14,7 +14,7 @@ export const Employees = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="p-4" id="employees">
+    <div className="p-4 py-10" id="employees">
       <div className="container mx-auto">
         <div className="flex md:flex-row flex-col">
           <div className="md:w-1/3 w-full mb-10">
@@ -51,51 +51,103 @@ export const Employees = () => {
 
 const employees = [
   {
-    imgUrl: "/employees/1.jpg",
-    name: "Yorkin Malikov",
-  },
-  {
     imgUrl: "/employees/2.jpg",
-    name: "Yorkin Malikov",
+    name: "Xolmurodova Maqsad",
+    position: "Buyuk Britaniya davlatiga mas'ul xodim",
   },
   {
     imgUrl: "/employees/3.jpg",
-    name: "Yorkin Malikov",
+    name: "Murodov Sardorbek ",
+    position: "Samarqand viloyatiga mas'ul xodim",
   },
   {
     imgUrl: "/employees/4.jpg",
-    name: "Yorkin Malikov",
+    name: "Ismailov Mustaqim",
+    position: "Sirdaryo viloyatiga mas'ul xodim",
   },
   {
     imgUrl: "/employees/5.jpg",
-    name: "Yorkin Malikov",
+    name: "Hasanov Azizjon",
+    position: "Latviya, Litva va Estoniya davlatlariga mas'ul xodim",
   },
   {
     imgUrl: "/employees/6.jpg",
-    name: "Yorkin Malikov",
+    name: "Muxammedov Dilshod",
+    position: "Toshkent shaharga mas'ul xodim",
   },
   {
     imgUrl: "/employees/7.jpg",
-    name: "Yorkin Malikov",
+    name: "",
+    position: "",
   },
   {
     imgUrl: "/employees/8.jpg",
-    name: "Yorkin Malikov",
+    name: "Karimov Ibrohim",
+    position: "Toshkent viloyatiga mas'ul xodim",
   },
   {
     imgUrl: "/employees/9.jpg",
-    name: "Yorkin Malikov",
+    name: "Xo'janiyozov Xayrullo",
+    position: "AQSH va Kanada davlatlariga mas'ul xodim",
   },
   {
     imgUrl: "/employees/10.jpg",
-    name: "Yorkin Malikov",
+    name: "Saydazimov Sarvar",
+    position: "Xitoy davlatiga mas'ul xodim",
   },
   {
     imgUrl: "/employees/11.jpg",
-    name: "Yorkin Malikov",
+    name: "Suyunov Shahzod",
+    position: "Arab davlatlariga mas'ul xodim",
   },
   {
     imgUrl: "/employees/12.jpg",
-    name: "Yorkin Malikov",
+    name: "Karimov Islom",
+    position: "Fransiya davlatiga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/13.jpg",
+    name: "Shonanov Oybek",
+    position: "Turkiya va Qirg'iziston davlatlariga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/14.jpg",
+    name: "Hasanova Arofat",
+    position: "Germaniya davlatiga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/15.jpg",
+    name: "Xo'djayeva Kamila",
+    position: "Janubiy Koreya davlatiga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/16.jpg",
+    name: "Samiyeva Nozima",
+    position: "Avstriya va Vengriya davlatlariga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/17.jpg",
+    name: "Bekmirzayev Asadbek",
+    position: "Ummon Sultonligi davlatiga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/18.jpg",
+    name: "Gulyamova Go'zal",
+    position: "Koreya davlatiga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/19.jpg",
+    name: "Baxtiyorov Muhammadali",
+    position: "Malayziya davlatiga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/20.jpg",
+    name: "Murodjonova Nargiza",
+    position: "Yaponiya davlatiga mas'ul xodim",
+  },
+  {
+    imgUrl: "/employees/21.jpg",
+    name: "Ilhomova Farangiz",
+    position: "Hindiston va Pokiston davlatlariga mas'ul xodim",
   },
 ];

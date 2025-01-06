@@ -10,6 +10,7 @@ interface EmployeeCardProps {
   employee: {
     imgUrl: string;
     name: string;
+    position: string;
   };
 }
 
@@ -35,7 +36,7 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
               />
               <div
                 className={cn(
-                  "w-full absolute flex opacity-0 bottom-0 left-0 right-0 h-20 items-center justify-center transition-all duration-200",
+                  "w-full absolute flex flex-col opacity-0 bottom-0 left-0 right-0 h-20 items-center justify-center transition-all duration-200",
                   isHover && "opacity-100",
                 )}
                 style={{
@@ -43,6 +44,7 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
                 }}
               >
                 <h1 className="text-white text-2xl font-semibold">{employee.name}</h1>
+                <p className="text-white text-sm font-light">{employee.position}</p>
               </div>
             </div>
           </CardContent>
