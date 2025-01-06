@@ -155,7 +155,7 @@ const employees = [
   {
     imgUrl: "/employees/17.jpg",
     name: "Bekmirzayev Asadbek",
-    position: "Ummon Sultonligi davlatiga mas'ul xodim",
+    position: "Ummon Sultonligi va Isroil davlatlariga mas'ul xodim",
     tel: ["+99871 202 77 78", "1596"],
     email: "manager23@exportstate.com",
   },

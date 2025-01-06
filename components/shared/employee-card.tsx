@@ -47,13 +47,15 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
               >
                 <h1 className="text-2xl">{employee.name}</h1>
                 <p className="text-sm">{employee.position}</p>
-                <div className="flex items-center justify-around text-sm">
-                  {employee?.tel?.map((tel, index1) => (
-                    <a href={`tel:${tel}`} key={index1}>
-                      {tel}
-                      {index1 !== employee.tel.length - 1 && <span className="mx-1">|</span>}
-                    </a>
-                  ))}
+                <div className="flex items-center justify-around text-sm md:flex-row flex-col">
+                  <div>
+                    {employee?.tel?.map((tel, index1) => (
+                      <a href={`tel:${tel}`} key={index1}>
+                        {tel}
+                        {index1 !== employee.tel.length - 1 && <span className="mx-1">|</span>}
+                      </a>
+                    ))}
+                  </div>
                   <a href={`mailto:${employee.email}`} className="ml-4">
                     {employee.email}
                   </a>
