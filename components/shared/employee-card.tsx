@@ -11,6 +11,8 @@ interface EmployeeCardProps {
     imgUrl: string;
     name: string;
     position: string;
+    tel: string[];
+    email?: string;
   };
 }
 
@@ -36,15 +38,26 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
               />
               <div
                 className={cn(
-                  "w-full absolute flex flex-col opacity-0 bottom-0 left-0 right-0 h-20 items-center justify-center transition-all duration-200",
+                  "w-full absolute text-white font-semibold flex flex-col opacity-0 bottom-0 left-0 right-0 h-28 items-center justify-center transition-all duration-200",
                   isHover && "opacity-100",
                 )}
                 style={{
                   background: "linear-gradient(0deg, #459e5f 0, rgba(0, 0, 0, 0) 100%)",
                 }}
               >
-                <h1 className="text-white text-2xl font-semibold">{employee.name}</h1>
-                <p className="text-white text-sm font-light">{employee.position}</p>
+                <h1 className="text-2xl">{employee.name}</h1>
+                <p className="text-sm">{employee.position}</p>
+                <div className="flex items-center justify-around text-sm">
+                  {employee?.tel?.map((tel, index1) => (
+                    <a href={`tel:${tel}`} key={index1}>
+                      {tel}
+                      {index1 !== employee.tel.length - 1 && <span className="mx-1">|</span>}
+                    </a>
+                  ))}
+                  <a href={`mailto:${employee.email}`} className="ml-4">
+                    {employee.email}
+                  </a>
+                </div>
               </div>
             </div>
           </CardContent>
