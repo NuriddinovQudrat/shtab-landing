@@ -51,51 +51,51 @@ export const Employees = () => {
 
 const employees = [
   {
-    imgUrl: "/employees/1.JPG",
+    imgUrl: "/employees/1.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/2.JPG",
+    imgUrl: "/employees/2.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/3.JPG",
+    imgUrl: "/employees/3.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/4.JPG",
+    imgUrl: "/employees/4.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/5.JPG",
+    imgUrl: "/employees/5.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/6.JPG",
+    imgUrl: "/employees/6.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/7.JPG",
+    imgUrl: "/employees/7.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/8.JPG",
+    imgUrl: "/employees/8.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/9.JPG",
+    imgUrl: "/employees/9.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/10.JPG",
+    imgUrl: "/employees/10.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/11.JPG",
+    imgUrl: "/employees/11.jpg",
     name: "Yorkin Malikov",
   },
   {
-    imgUrl: "/employees/12.JPG",
+    imgUrl: "/employees/12.jpg",
     name: "Yorkin Malikov",
   },
 ];
