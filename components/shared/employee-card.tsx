@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/legacy/image";
 import { CarouselItem } from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
 import { cn } from "@/lib/utils";
@@ -28,18 +29,23 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
         <Card>
           <CardContent className="flex p-0 rounded-md md:h-[500px] h-[400px] items-center justify-center">
             <div className="w-full h-full rounded-md relative overflow-hidden">
-              <div
-                className={cn(
-                  "w-full h-full object-cover transition-all duration-200",
-                  isHover && "scale-110",
-                )}
+              <Image
+                src={employee.imgUrl}
+                alt={employee.name}
+                layout="fill"
+                objectPosition={"center"}
+                className={cn("object-cover transition-all duration-200", isHover && "scale-110")}
+                loading="lazy"
+              />
+              {/* <div
+                className={cn("object-cover transition-all duration-200", isHover && "scale-110")}
                 style={{
-                  backgroundImage: `url(${employee.imgUrl ? employee.imgUrl : "/employees/user.png"})`,
+                  backgroundImage: `url(${employee.imgUrl})`,
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
-              ></div>
+              ></div> */}
               <div
                 className={cn(
                   "w-full absolute text-white font-semibold flex flex-col opacity-0 bottom-0 left-0 right-0 h-28 items-center justify-center transition-all duration-200",
