@@ -31,13 +31,13 @@ export const employees = [
     position: "Toshkent shaharga mas'ul xodim",
     tel: ["+99871 202 77 78", "1575"],
   },
-  {
-    imgUrl: "/employees/7.jpg",
-    name: "",
-    position: "",
-    tel: ["+99871 202 77 78", "1588"],
-    email: "manager07@exportstate.com",
-  },
+  //   {
+  //     imgUrl: "/employees/7.jpg",
+  //     name: "",
+  //     position: "",
+  //     tel: ["+99871 202 77 78", "1588"],
+  //     email: "manager07@exportstate.com",
+  //   },
   {
     imgUrl: "/employees/8.jpg",
     name: "Karimov Ibrohim",
