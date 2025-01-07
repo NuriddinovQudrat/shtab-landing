@@ -35,6 +35,7 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
                 layout="fill"
                 objectPosition={"center"}
                 className={cn("object-cover transition-all duration-200", isHover && "scale-110")}
+                loading="eager"
               />
               <div
                 className={cn(
