@@ -34,7 +34,7 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
                   isHover && "scale-110",
                 )}
                 style={{
-                  backgroundImage: `url(${employee.imgUrl})`,
+                  backgroundImage: `url(${employee.imgUrl ? employee.imgUrl : "/employees/user.png"})`,
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
