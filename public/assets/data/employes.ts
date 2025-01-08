@@ -90,9 +90,9 @@ export const employees = [
   {
     imgUrl: "/employees/15.jpg",
     name: "Xo'djayeva Kamila",
-    position: "Janubiy Koreya davlatiga mas'ul xodim",
+    position: "Koreya va Singapur davlatiga mas'ul xodim",
     tel: ["+99871 202 77 78", "1583"],
-    email: "manager09@exportstate.com",
+    email: "manager10@exportstate.com",
   },
   {
     imgUrl: "/employees/16.jpg",
