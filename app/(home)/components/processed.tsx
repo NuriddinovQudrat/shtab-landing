@@ -36,8 +36,8 @@ const Processed = () => {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,[YOUR_BASE64_BLUR_DATA]"
+          // placeholder="blur"
+          // blurDataURL="data:image/jpeg;base64,[YOUR_BASE64_BLUR_DATA]"
           className={`hover:scale-110 transition-all duration-300 ${
             isLoaded ? "blur-0" : "blur-lg"
           }`}
