@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+    domains: ["localhost", "https://exportstate.com/", "https://shtab-landing.vercel.app/"],
   },
 };
 
