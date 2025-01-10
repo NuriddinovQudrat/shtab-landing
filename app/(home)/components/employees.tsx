@@ -1,14 +1,13 @@
 "use client";
 
 import EmployeeCard from "@/components/shared/employee-card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import {} from // Carousel,
+// CarouselContent,
+// CarouselNext,
+// CarouselPrevious,
+"@/components/ui/carousel";
 import { useTranslation } from "react-i18next";
-import Autoplay from "embla-carousel-autoplay";
+// import Autoplay from "embla-carousel-autoplay";
 import { employees } from "@/public/assets/data/employes";
 
 const Employees = () => {
@@ -29,7 +28,7 @@ const Employees = () => {
           </div>
         </div>
 
-        <Carousel
+        {/* <Carousel
           className="w-full"
           plugins={[
             Autoplay({
@@ -37,14 +36,14 @@ const Employees = () => {
             }),
           ]}
         >
-          <CarouselContent className="-ml-1">
-            {employees.map((employee, index) => (
-              <EmployeeCard key={index} employee={employee} />
-            ))}
-          </CarouselContent>
+          <CarouselContent className="-ml-1"> */}
+        {employees.map((employee, index) => (
+          <EmployeeCard key={index} employee={employee} />
+        ))}
+        {/* </CarouselContent>
           <CarouselPrevious className="text-primary" />
           <CarouselNext className="text-primary" />
-        </Carousel>
+        </Carousel> */}
       </div>
     </div>
   );
