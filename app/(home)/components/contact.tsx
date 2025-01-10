@@ -18,7 +18,7 @@ import { z } from "zod";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 
-export const Contact = () => {
+const Contact = () => {
   const { t } = useTranslation();
 
   const formSchema = z.object({
@@ -158,3 +158,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export default Contact;

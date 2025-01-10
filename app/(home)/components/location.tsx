@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Cookies from "js-cookie";
 
-export const Location = () => {
+const Location = () => {
   const { t } = useTranslation();
   const initialLang = Cookies.get("i18next");
 
@@ -88,3 +88,5 @@ export const Location = () => {
     </div>
   );
 };
+
+export default Location;

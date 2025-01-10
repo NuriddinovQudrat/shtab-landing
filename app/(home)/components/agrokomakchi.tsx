@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 
-export const Agrokomakchi = () => {
+const Agrokomakchi = () => {
   const isMobile = useIsMobile();
   const { t } = useTranslation();
 
@@ -86,3 +86,5 @@ export const Agrokomakchi = () => {
     </div>
   );
 };
+
+export default Agrokomakchi;

@@ -4,7 +4,7 @@ import Image from "next/legacy/image";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-export const Assistence = () => {
+const Assistence = () => {
   const { t } = useTranslation();
 
   return (
@@ -75,3 +75,5 @@ export const Assistence = () => {
     </div>
   );
 };
+
+export default Assistence;

@@ -4,7 +4,7 @@ import { BrandCard } from "@/components/shared/brand-card";
 import Marquee from "react-fast-marquee";
 import { useTranslation } from "react-i18next";
 
-export const Brands = () => {
+const Brands = () => {
   const { t } = useTranslation();
 
   return (
@@ -69,3 +69,5 @@ const brands = [
     title: `OOO "Fargona Meva Export"`,
   },
 ];
+
+export default Brands;

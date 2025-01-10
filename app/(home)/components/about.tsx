@@ -12,7 +12,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/legacy/image";
 import { useTranslation } from "react-i18next";
 
-export const About = () => {
+const About = () => {
   const { t } = useTranslation();
 
   return (
@@ -175,3 +175,5 @@ const carouselItems = [
     description: "export shtab",
   },
 ];
+
+export default About;

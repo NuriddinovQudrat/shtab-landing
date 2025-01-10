@@ -4,7 +4,7 @@ import Image from "next/legacy/image";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-export const Processed = () => {
+const Processed = () => {
   const { t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -47,3 +47,5 @@ export const Processed = () => {
     </div>
   );
 };
+
+export default Processed;

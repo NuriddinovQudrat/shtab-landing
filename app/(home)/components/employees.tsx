@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 import Autoplay from "embla-carousel-autoplay";
 import { employees } from "@/public/assets/data/employes";
 
-export const Employees = () => {
+const Employees = () => {
   const { t } = useTranslation();
 
   return (
@@ -49,3 +49,5 @@ export const Employees = () => {
     </div>
   );
 };
+
+export default Employees;

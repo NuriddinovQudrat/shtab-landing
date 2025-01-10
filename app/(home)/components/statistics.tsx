@@ -3,7 +3,7 @@
 import { StatisticsTab } from "@/components/shared/statistics-tab";
 import { useTranslation } from "react-i18next";
 
-export const Statistics = () => {
+const Statistics = () => {
   const { t } = useTranslation();
 
   return (
@@ -28,3 +28,5 @@ export const Statistics = () => {
     </div>
   );
 };
+
+export default Statistics;

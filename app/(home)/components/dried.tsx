@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-export const Dried = () => {
+const Dried = () => {
   const { t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -50,3 +50,5 @@ export const Dried = () => {
     </div>
   );
 };
+
+export default Dried;
