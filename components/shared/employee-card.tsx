@@ -5,7 +5,6 @@ import Image from "next/legacy/image";
 import { CarouselItem } from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
 import { cn } from "@/lib/utils";
-import Rasm from "@/components/images/2.jpg";
 
 interface EmployeeCardProps {
   employee: {
@@ -30,16 +29,8 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
         <Card>
           <CardContent className="flex p-0 rounded-md md:h-[500px] h-[400px] items-center justify-center">
             <div className="w-full h-full rounded-md relative overflow-hidden">
-              {/* <Image
-                src={employee.imgUrl}
-                alt={employee.name}
-                layout="fill"
-                objectPosition={"center"}
-                className={cn("object-cover transition-all duration-200", isHover && "scale-110")}
-                quality={75}
-              /> */}
               <Image
-                src={Rasm.src}
+                src={employee.imgUrl}
                 alt={employee.name}
                 layout="fill"
                 objectPosition={"center"}
