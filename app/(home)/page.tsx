@@ -17,9 +17,9 @@ export default function HomePage() {
   return (
     <div className="w-full min-h-screen relative">
       <Hero />
-      <Employees />
       <Statistics />
       <About />
+      <Employees />
       <Brands />
       <Fresh />
       <Dried />
