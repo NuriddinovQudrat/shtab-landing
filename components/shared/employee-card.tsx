@@ -36,6 +36,7 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
                 objectPosition={"center"}
                 className={cn("object-cover transition-all duration-200", isHover && "scale-110")}
                 quality={75}
+                typeof="webp"
               />
               {/* <div
                 className={cn("object-cover transition-all duration-200", isHover && "scale-110")}
