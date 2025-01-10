@@ -5,7 +5,7 @@ import Image from "next/legacy/image";
 import { CarouselItem } from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
 import { cn } from "@/lib/utils";
-import Rasm from "@/public/employees/2.jpg";
+import Rasm from "@/components/images/2.jpg";
 
 interface EmployeeCardProps {
   employee: {
