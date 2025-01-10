@@ -5,7 +5,18 @@ const nextConfig: NextConfig = {
   images: {
     deviceSizes: [320, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    domains: ["dummyimage.com", "exportstate.com", "shtab-landing.vercel.app"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "exportstate.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "shtab-landing.vercel.app",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
