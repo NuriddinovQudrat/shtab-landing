@@ -48,8 +48,10 @@ const Contact = () => {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     // https://api.telegram.org/bot{bot}/getUpdates
-    const token = "7559766084:AAHq-qObPmdmXxZ6l45xn37AW5HqYrhmbQU";
-    const chatID = "-4581798282";
+    // const token = "7559766084:AAHq-qObPmdmXxZ6l45xn37AW5HqYrhmbQU";
+    // const chatID = "-4581798282";
+    const token = "7886920131:AAGl1mLLb6mqPd8MUoBNVnD6BsetwEnDJn4";
+    const chatID = "-1002294513810";
 
     const message = `<b>🆕 Yangi xabar</b>%0A%0A<b>🏠 Kompaniya: </b><i>${values.companyName ? values.companyName : "-"}</i>%0A<b>👤 F.I.Sh: </b><i>${values.fullname}</i>%0A<b>🗂 Email: </b><i>${values.email}</i>%0A<b>📞 Telefon: </b><i>${values.phone}</i>%0A<b>📬 Xabar: </b><i>${values.message}</i>`;
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatID}&text=${message}&parse_mode=html`;
