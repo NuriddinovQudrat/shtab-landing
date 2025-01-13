@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { useTranslation } from "react-i18next";
 import Autoplay from "embla-carousel-autoplay";
+import Employee1 from "@/components/images/employees/1.jpg";
 import Employee2 from "@/components/images/employees/2.jpg";
 import Employee3 from "@/components/images/employees/3.jpg";
 import Employee4 from "@/components/images/employees/4.jpg";
@@ -33,6 +34,160 @@ import Employee22 from "@/components/images/employees/22.jpg";
 
 const Employees = () => {
   const { t } = useTranslation();
+
+  const employees = [
+    {
+      imgUrl: Employee1.src,
+      name: "Ismoilov Husniddin",
+      position: t("leader"),
+      tel: ["+99833 633 44 44"],
+      email: "manager07@exportstate.com",
+    },
+    {
+      imgUrl: Employee2.src,
+      name: "Xolmurodova Maqsad",
+      position: t("gbr"),
+      tel: ["+99871 202 77 78", "1588"],
+      email: "manager07@exportstate.com",
+    },
+    {
+      imgUrl: Employee3.src,
+      name: "Murodov Sardorbek ",
+      position: t("samarqand"),
+      tel: ["+99871 202 77 78", "1513"],
+    },
+    {
+      imgUrl: Employee4.src,
+      name: "Ismailov Mustaqim",
+      position: t("sirdaryo"),
+      tel: ["+99871 202 77 78", "1515"],
+    },
+    {
+      imgUrl: Employee5.src,
+      name: "Hasanov Azizjon",
+      position: t("latviya-litva"),
+      tel: ["+99871 202 77 78", "1517"],
+      email: "manager22@exportstate.com",
+    },
+    {
+      imgUrl: Employee6.src,
+      name: "Muxamedov Dilshod",
+      position: t("toshkent"),
+      tel: ["+99871 202 77 78", "1575"],
+    },
+    //   {
+    //     imgUrl: Employee7.src,
+    //     name: "",
+    //     position: "",
+    //     tel: ["+99871 202 77 78", "1588"],
+    //     email: "manager07@exportstate.com",
+    //   },
+    {
+      imgUrl: Employee8.src,
+      name: "Karimov Ibrohim",
+      position: t("toshkent-v"),
+      tel: ["+99871 202 77 78", "1516"],
+      email: "manager07@exportstate.com",
+    },
+    {
+      imgUrl: Employee9.src,
+      name: "Xo'janiyozov Xayrullo",
+      position: t("aqsh-canada"),
+      tel: ["+99871 202 77 78", "1595"],
+      email: "manager21@exportstate.com",
+    },
+    {
+      imgUrl: Employee10.src,
+      name: "Saydazimov Sarvar",
+      position: t("china"),
+      tel: ["+99871 202 77 78", "1584"],
+      email: "manager11@exportstate.com",
+    },
+    {
+      imgUrl: Employee11.src,
+      name: "Suyunov Shahzod",
+      position: t("arab"),
+      tel: ["+99871 202 77 78", "1596"],
+      email: "manager13@exportstate.com",
+    },
+    {
+      imgUrl: Employee12.src,
+      name: "Karimov Islom",
+      position: t("fransiya"),
+      tel: ["+99871 202 77 78", "1593"],
+      email: "manager19@exportstate.com",
+    },
+    {
+      imgUrl: Employee13.src,
+      name: "Shonanov Oybek",
+      position: t("turk-qirgz"),
+      tel: ["+99871 202 77 78", "1587"],
+      email: "manager14@exportstate.com",
+    },
+    {
+      imgUrl: Employee14.src,
+      name: "Hasanova Arofat",
+      position: t("germany"),
+      tel: ["+99871 202 77 78", "1596"],
+      email: "manager06@exportstate.com",
+    },
+    {
+      imgUrl: Employee15.src,
+      name: "Xo'djayeva Kamila",
+      position: t("koreya-singapur"),
+      tel: ["+99871 202 77 78", "1583"],
+      email: "manager10@exportstate.com",
+    },
+    {
+      imgUrl: Employee16.src,
+      name: "Samiyeva Nozima",
+      position: t("avstria-vengria"),
+      tel: ["+99871 202 77 78", "1581"],
+      email: "manager08@exportstate.com",
+    },
+    {
+      imgUrl: Employee17.src,
+      name: "Bekmirzayev Asadbek",
+      position: t("ummon-isroil"),
+      tel: ["+99871 202 77 78", "1596"],
+      email: "manager23@exportstate.com",
+    },
+    {
+      imgUrl: Employee18.src,
+      name: "Gulyamova Go'zal",
+      position: t("korea"),
+      tel: ["+99871 202 77 78", "1583"],
+      email: "manager20@exportstate.com",
+    },
+    {
+      imgUrl: Employee19.src,
+      name: "Baxtiyorov Muhammadali",
+      position: t("malaysia"),
+      tel: ["+99871 202 77 78", "1588"],
+      email: "manager07@exportstate.com",
+    },
+    {
+      imgUrl: Employee20.src,
+      name: "Murodjonova Nargiza",
+      position: t("japan"),
+      tel: ["+99871 202 77 78", "1583"],
+      email: "manager09@exportstate.com",
+    },
+    {
+      imgUrl: Employee21.src,
+      name: "Ilhomova Farangiz",
+      position: t("india-pakistan"),
+      tel: ["+99871 202 77 78", "1590"],
+      email: "manager17@exportstate.com",
+    },
+    {
+      imgUrl: Employee22.src,
+      name: "Orziqulova Sevinch",
+      position: t("italy-sweden"),
+      tel: ["+99871 202 77 78", "1585"],
+      email: "manager16@exportstate.com",
+    },
+  ];
 
   return (
     <div className="p-4 py-10" id="employees">
@@ -71,150 +226,3 @@ const Employees = () => {
 };
 
 export default Employees;
-
-const employees = [
-  {
-    imgUrl: Employee2.src,
-    name: "Xolmurodova Maqsad",
-    position: "Buyuk Britaniya davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1588"],
-    email: "manager07@exportstate.com",
-  },
-  {
-    imgUrl: Employee3.src,
-    name: "Murodov Sardorbek ",
-    position: "Samarqand viloyatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1513"],
-  },
-  {
-    imgUrl: Employee4.src,
-    name: "Ismailov Mustaqim",
-    position: "Sirdaryo viloyatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1515"],
-  },
-  {
-    imgUrl: Employee5.src,
-    name: "Hasanov Azizjon",
-    position: "Latviya, Litva va Estoniya davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1517"],
-    email: "manager22@exportstate.com",
-  },
-  {
-    imgUrl: Employee6.src,
-    name: "Muxammedov Dilshod",
-    position: "Toshkent shaharga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1575"],
-  },
-  //   {
-  //     imgUrl: Employee7.src,
-  //     name: "",
-  //     position: "",
-  //     tel: ["+99871 202 77 78", "1588"],
-  //     email: "manager07@exportstate.com",
-  //   },
-  {
-    imgUrl: Employee8.src,
-    name: "Karimov Ibrohim",
-    position: "Toshkent viloyatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1516"],
-    email: "manager07@exportstate.com",
-  },
-  {
-    imgUrl: Employee9.src,
-    name: "Xo'janiyozov Xayrullo",
-    position: "AQSH va Kanada davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1595"],
-    email: "manager21@exportstate.com",
-  },
-  {
-    imgUrl: Employee10.src,
-    name: "Saydazimov Sarvar",
-    position: "Xitoy davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1584"],
-    email: "manager11@exportstate.com",
-  },
-  {
-    imgUrl: Employee11.src,
-    name: "Suyunov Shahzod",
-    position: "Arab davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1596"],
-    email: "manager13@exportstate.com",
-  },
-  {
-    imgUrl: Employee12.src,
-    name: "Karimov Islom",
-    position: "Fransiya davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1593"],
-    email: "manager19@exportstate.com",
-  },
-  {
-    imgUrl: Employee13.src,
-    name: "Shonanov Oybek",
-    position: "Turkiya va Qirg'iziston davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1587"],
-    email: "manager14@exportstate.com",
-  },
-  {
-    imgUrl: Employee14.src,
-    name: "Hasanova Arofat",
-    position: "Germaniya davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1596"],
-    email: "manager06@exportstate.com",
-  },
-  {
-    imgUrl: Employee15.src,
-    name: "Xo'djayeva Kamila",
-    position: "Koreya va Singapur davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1583"],
-    email: "manager10@exportstate.com",
-  },
-  {
-    imgUrl: Employee16.src,
-    name: "Samiyeva Nozima",
-    position: "Avstriya va Vengriya davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1581"],
-    email: "manager08@exportstate.com",
-  },
-  {
-    imgUrl: Employee17.src,
-    name: "Bekmirzayev Asadbek",
-    position: "Ummon Sultonligi va Isroil davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1596"],
-    email: "manager23@exportstate.com",
-  },
-  {
-    imgUrl: Employee18.src,
-    name: "Gulyamova Go'zal",
-    position: "Koreya davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1583"],
-    email: "manager20@exportstate.com",
-  },
-  {
-    imgUrl: Employee19.src,
-    name: "Baxtiyorov Muhammadali",
-    position: "Malayziya davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1588"],
-    email: "manager07@exportstate.com",
-  },
-  {
-    imgUrl: Employee20.src,
-    name: "Murodjonova Nargiza",
-    position: "Yaponiya davlatiga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1583"],
-    email: "manager09@exportstate.com",
-  },
-  {
-    imgUrl: Employee21.src,
-    name: "Ilhomova Farangiz",
-    position: "Hindiston va Pokiston davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1590"],
-    email: "manager17@exportstate.com",
-  },
-  {
-    imgUrl: Employee22.src,
-    name: "Orziqulova Sevinch",
-    position: "Italiya, Shvetsiya va Gretsiya davlatlariga mas'ul xodim",
-    tel: ["+99871 202 77 78", "1585"],
-    email: "manager16@exportstate.com",
-  },
-];
