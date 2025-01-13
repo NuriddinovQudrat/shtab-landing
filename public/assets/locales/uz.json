@@ -3,6 +3,7 @@
   "statistics": "Ko'rsatkichlar",
   "about": "Biz haqimizda",
   "brands": "Brend korxonalar",
+  "useful-info": "Foydali ma'lumotlar",
   "contact": "Bog'lanish",
   "hero-text": "O‘simliklar karantini va himoyasi agentligi Markaziy eksport shtabi",
   "statistics-text": "O'simliklar karantini va himoyasi agentligi binosida \"Markaziy eksport shtabi\" tashkil etilib, 22 nafar mutaxassis biriktirildi hamda 14 ta hududlarda ham \"Eksport shtab\"lari tashkil etildi. \"Markaziy eksport shtabi\" a'zolari 52 ta xorijiy davlatlar elchixonalariga va hududiy shtablarga biriktirildi.",
@@ -82,5 +83,6 @@
   "malaysia": "Malayziya davlatiga mas'ul xodim",
   "japan": "Yaponiya davlatiga mas'ul xodim",
   "india-pakistan": "Hindiston va Pokiston davlatlariga mas'ul xodim",
-  "italy-sweden": "Italiya, Shvetsiya va Gretsiya davlatlariga mas'ul xodim"
+  "italy-sweden": "Italiya, Shvetsiya va Gretsiya davlatlariga mas'ul xodim",
+  "useful-info-1": "O‘zbekiston Respublikasi O‘simliklar Karantini va Himoyasi agentligi"
 }

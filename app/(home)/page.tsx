@@ -5,6 +5,7 @@ const Statistics = dynamic(() => import("./components/statistics"));
 const About = dynamic(() => import("./components/about"));
 const Employees = dynamic(() => import("./components/employees"));
 const Brands = dynamic(() => import("./components/brands"));
+const UsefulInfo = dynamic(() => import("./components/useful-info"));
 const Fresh = dynamic(() => import("./components/fresh"));
 const Dried = dynamic(() => import("./components/dried"));
 const Processed = dynamic(() => import("./components/processed"));
@@ -21,6 +22,7 @@ export default function HomePage() {
       <About />
       <Employees />
       <Brands />
+      <UsefulInfo />
       <Fresh />
       <Dried />
       <Processed />

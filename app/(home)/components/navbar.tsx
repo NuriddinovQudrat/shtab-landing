@@ -53,6 +53,10 @@ export const Navbar = () => {
       label: t("brands"),
       href: "#brands",
     },
+    {
+      label: t("useful-info"),
+      href: "#useful-info",
+    },
   ];
 
   return (
