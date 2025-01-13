@@ -41,7 +41,6 @@ const Employees = () => {
       name: "Ismoilov Husniddin",
       position: t("leader"),
       tel: ["+99833 633 44 44"],
-      email: "manager07@exportstate.com",
     },
     {
       imgUrl: Employee2.src,
