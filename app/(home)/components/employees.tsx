@@ -31,6 +31,7 @@ import Employee19 from "@/components/images/employees/19.jpg";
 import Employee20 from "@/components/images/employees/20.jpg";
 import Employee21 from "@/components/images/employees/21.jpg";
 import Employee22 from "@/components/images/employees/22.jpg";
+import Employee23 from "@/components/images/employees/23.jpg";
 
 const Employees = () => {
   const { t } = useTranslation();
@@ -119,7 +120,7 @@ const Employees = () => {
     {
       imgUrl: Employee13.src,
       name: "Shonanov Oybek",
-      position: t("turk-qirgz"),
+      position: t("tojik-turman"),
       tel: ["+99871 202 77 78", "1587"],
       email: "manager14@exportstate.com",
     },
@@ -167,9 +168,9 @@ const Employees = () => {
     },
     {
       imgUrl: Employee20.src,
-      name: "Murodjonova Nargiza",
+      name: "Muradjonova Nargiza",
       position: t("japan"),
-      tel: ["+99871 202 77 78", "1583"],
+      tel: ["+99871 202 77 78", "1582"],
       email: "manager09@exportstate.com",
     },
     {
@@ -185,6 +186,12 @@ const Employees = () => {
       position: t("italy-sweden"),
       tel: ["+99871 202 77 78", "1585"],
       email: "manager16@exportstate.com",
+    },
+    {
+      imgUrl: Employee23.src,
+      name: "Soburov Asadbek",
+      position: t("qoraqalpoq"),
+      tel: ["+99871 202 77 78", "1506"],
     },
   ];
 
