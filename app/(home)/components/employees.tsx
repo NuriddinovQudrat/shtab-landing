@@ -212,9 +212,16 @@ const Employees = () => {
           ]}
         >
           <CarouselContent className="-ml-1">
-            {employees.map((employee, index) => (
+            <EmployeeCard employee={employees[0]} />
+            {/* {employees.map((employee, index) => (
               <EmployeeCard key={index} employee={employee} />
-            ))}
+            ))} */}
+            {employees
+              .filter((_, index) => index > 0)
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((employee, index) => (
+                <EmployeeCard key={index} employee={employee} />
+              ))}
           </CarouselContent>
           <CarouselPrevious className="text-primary" />
           <CarouselNext className="text-primary" />

@@ -9,8 +9,12 @@ const UsefulInfo = () => {
 
   const materials = [
     {
-      title: t("useful-info-1"),
+      title: "O‘zbekiston Respublikasi O‘simliklar Karantini va Himoyasi agentligi haqida",
       link: "./useful-info/1.pdf",
+    },
+    {
+      title: "Xalqaro standartlar to‘g‘risida ma’lumot",
+      link: "./useful-info/2.pdf",
     },
   ];
 
@@ -30,7 +34,7 @@ const UsefulInfo = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 md:mt-10 mt-5 container mx-auto w-full">
+      <div className="flex flex-col md:mt-10 mt-5 container mx-auto w-full">
         {materials?.map((material, index) => <LinkCard key={index} material={material} />)}
       </div>
     </div>
