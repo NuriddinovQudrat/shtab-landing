@@ -68,6 +68,14 @@ const brands = [
     image: "/brands/nur.png",
     title: `OOO "Fargona Meva Export"`,
   },
+  {
+    image: "/brands/exim-agro.png",
+    title: `Exim Agro`,
+  },
+  {
+    image: "/brands/fruit-voyage.png",
+    title: `Fruit Voyage`,
+  },
 ];
 
 export default Brands;

@@ -39,7 +39,7 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
               />
               <div
                 className={cn(
-                  "w-full absolute text-white font-semibold flex flex-col opacity-0 bottom-0 left-0 right-0 h-28 items-center justify-center transition-all duration-200",
+                  "w-full absolute text-white font-semibold flex flex-col opacity-0 bottom-0 left-0 right-0 h-36 items-center justify-center transition-all duration-200",
                   isHover && "opacity-100",
                 )}
                 style={{
@@ -47,8 +47,8 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
                 }}
               >
                 <h1 className="text-2xl">{employee.name}</h1>
-                <p className="text-sm">{employee.position}</p>
-                <div className="flex items-center justify-around text-sm md:flex-row flex-col">
+                <p className="text-sm p-2 text-center">{employee.position}</p>
+                <div className="flex items-center justify-around text-sm flex-col">
                   <div>
                     {employee?.tel?.map((tel, index1) => (
                       <a href={`tel:${tel}`} key={index1}>
@@ -57,9 +57,11 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
                       </a>
                     ))}
                   </div>
-                  <a href={`mailto:${employee.email}`} className="ml-4">
-                    {employee.email}
-                  </a>
+                  <div>
+                    <a href={`mailto:${employee.email}`} className="ml-4">
+                      {employee.email}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
