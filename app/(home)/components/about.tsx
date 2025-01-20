@@ -174,6 +174,10 @@ const carouselItems = [
     imageUrl: "/carousel/export-shtab6.jpg",
     description: "export shtab",
   },
+  {
+    imageUrl: "/carousel/export-shtab7.jpg",
+    description: "export shtab",
+  },
 ];
 
 export default About;
